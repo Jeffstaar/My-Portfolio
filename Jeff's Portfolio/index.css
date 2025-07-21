@@ -1,0 +1,106 @@
+body {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-image: url("images/digital-landscape.jpg");
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+}
+
+.skill-detail {
+    flex-direction: row;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0px 10px 10px 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.profile-section {
+    margin-bottom: 50px;
+}
+
+.profile-img {
+    float: left;
+}
+
+i {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.about-me-title {
+    margin: 20px 20px 20px 20px;
+    border: 5px 5px 5px 5px;
+    padding: auto;
+}
+
+.about-me-title h1 {
+    padding-top: 15px;
+}
+
+.about-me {
+    margin-top: 30px;
+}
+
+.star-rating {
+    white-space: nowrap;
+}
+
+.star-rating [type="radio"] {
+    appearance: none;
+}
+
+.star-rating i {
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.star-rating label:is(:hover, :has(~ :hover)) i {
+    transform: scale(1.35);
+    color: #fffdba;
+    animation: jump 0.5s calc(0.3s + (var(--i) - 1) * 0.15s) alternate infinite;
+}
+
+.star-rating label:has(~ :checked) i {
+    color: #faec1b;
+    text-shadow: 0 0 2px #ffffff, 0 0 10px #ffee58;
+}
